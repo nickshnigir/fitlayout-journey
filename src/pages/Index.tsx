@@ -18,24 +18,24 @@ const Index = () => {
     {
       name: "Hiit",
       sessions: "12 session",
-      image: "lovable-uploads/f1c1dd3c-d538-47bc-bff3-4bcdf0b1bc5f.png"
+      image: "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&q=80"
     },
     {
       name: "Amrap",
       sessions: "15 session",
-      image: "lovable-uploads/f1c1dd3c-d538-47bc-bff3-4bcdf0b1bc5f.png"
+      image: "https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&q=80"
     },
     {
       name: "Focus",
       sessions: "8 session",
-      image: "lovable-uploads/f1c1dd3c-d538-47bc-bff3-4bcdf0b1bc5f.png"
+      image: "https://images.unsplash.com/photo-1549576490-b0b4831ef60a?auto=format&fit=crop&q=80"
     }
   ];
 
   const trendingWorkouts = [
     {
       title: "Push Your Limit",
-      image: "lovable-uploads/f1c1dd3c-d538-47bc-bff3-4bcdf0b1bc5f.png",
+      image: "https://images.unsplash.com/photo-1599058917765-a780eda07a3e?auto=format&fit=crop&q=80",
       tags: ["Beginner", "Full body"],
       kcal: 360,
       duration: "1h 25min",
@@ -73,7 +73,7 @@ const Index = () => {
             <Card key={index} className="overflow-hidden rounded-2xl border-0">
               <div className="relative aspect-[16/9]">
                 <img
-                  src={`/${workout.image}`}
+                  src={workout.image}
                   alt={workout.title}
                   className="w-full h-full object-cover"
                 />
@@ -128,7 +128,7 @@ const Index = () => {
               )}
             >
               <img
-                src={`/${type.image}`}
+                src={type.image}
                 alt={type.name}
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -148,7 +148,7 @@ const Index = () => {
         <Card className="flex items-center gap-4 p-4 rounded-2xl border-0">
           <div className="h-16 w-16 rounded-xl overflow-hidden flex-shrink-0">
             <img
-              src="/lovable-uploads/f1c1dd3c-d538-47bc-bff3-4bcdf0b1bc5f.png"
+              src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80"
               alt="Deep Amrap Burner"
               className="w-full h-full object-cover"
             />
