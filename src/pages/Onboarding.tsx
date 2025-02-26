@@ -40,12 +40,15 @@ const Onboarding = () => {
         </div>
       </div>
 
-      {/* Green Circle with Image */}
+      {/* Green Circle with Image and C Letter */}
       <div className="relative w-full aspect-square mt-8">
         <div className="absolute inset-0 bg-green-500 rounded-full scale-[1.8] translate-y-[30%]"></div>
+        <div className="absolute inset-0 flex items-center justify-center z-10">
+          <span className="text-white text-[160px] font-bold transform -translate-y-6">C</span>
+        </div>
         <div className="absolute inset-0">
           <img
-            src="/lovable-uploads/68f99696-c842-449c-bba2-c5909d2aa76b.png"
+            src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Zml0bmVzc3x8fHx8fDE3MDY3OTc5NzY&ixlib=rb-4.0.3&q=80&w=1080"
             alt="Fitness woman"
             className="w-full h-full object-cover"
           />
@@ -64,7 +67,7 @@ const Onboarding = () => {
           <Button 
             size="icon" 
             className="h-12 w-12 rounded-full bg-green-500 hover:bg-green-600"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/home")}
           >
             <ArrowRight className="h-6 w-6" />
           </Button>
