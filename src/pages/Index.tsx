@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -12,8 +11,10 @@ import {
   Flame
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Link, useLocation } from "react-router-dom";
 
 const Index = () => {
+  const location = useLocation();
   const workoutTypes = [
     {
       name: "Hiit",
@@ -173,14 +174,18 @@ const Index = () => {
       {/* Bottom Navigation */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t py-2 px-4">
         <div className="flex justify-between items-center max-w-md mx-auto">
-          <Button variant="ghost" size="sm" className="flex flex-col items-center gap-1">
-            <HomeIcon className="h-6 w-6 text-green-500" />
-            <span className="text-xs text-green-500">Home</span>
-          </Button>
-          <Button variant="ghost" size="sm" className="flex flex-col items-center gap-1">
-            <Search className="h-6 w-6 text-gray-400" />
-            <span className="text-xs text-gray-400">Search</span>
-          </Button>
+          <Link to="/home">
+            <Button variant="ghost" size="sm" className="flex flex-col items-center gap-1">
+              <HomeIcon className="h-6 w-6 text-green-500" />
+              <span className="text-xs text-green-500">Home</span>
+            </Button>
+          </Link>
+          <Link to="/search">
+            <Button variant="ghost" size="sm" className="flex flex-col items-center gap-1">
+              <Search className="h-6 w-6 text-gray-400" />
+              <span className="text-xs text-gray-400">Search</span>
+            </Button>
+          </Link>
           <Button variant="ghost" size="sm" className="flex flex-col items-center gap-1">
             <FileText className="h-6 w-6 text-gray-400" />
             <span className="text-xs text-gray-400">Article</span>
