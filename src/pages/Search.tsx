@@ -17,7 +17,7 @@ const Search = () => {
     },
     {
       title: "Deep Amrap Burner",
-      image: "https://images.unsplash.com/photo-1609899537878-29956d2d3971?auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?auto=format&fit=crop&q=80",
       kcal: 125,
       duration: "15min",
       level: "Beginner",
@@ -25,7 +25,7 @@ const Search = () => {
     },
     {
       title: "Deep Butt Sculp",
-      image: "https://images.unsplash.com/photo-1604480132736-44c188fe3d20?auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80",
       kcal: 88,
       duration: "30min",
       level: "Beginner",
